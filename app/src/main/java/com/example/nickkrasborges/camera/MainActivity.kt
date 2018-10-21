@@ -44,13 +44,18 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var imageView: ImageView
+    //lateinit var imageView: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        /*var btnCamera: Button = findViewById<Button>(R.id.btnCamera) as Button
+        iniciaCamera()
+
+    }
+
+    /*fun iniciaCameraIntent(){
+        var btnCamera: Button = findViewById<Button>(R.id.btnCamera) as Button
          imageView = findViewById<ImageView>(R.id.imageView) as ImageView
         btnCamera.setOnClickListener(View.OnClickListener {
             try {
@@ -61,11 +66,8 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, exception.message, Toast.LENGTH_LONG)
             }
 
-        })*/
-
-        iniciaCamera()
-
-    }
+        })
+    }*/
 
 /*
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
